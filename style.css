@@ -2,10 +2,117 @@
   /*:root can be useful for declaring global CSS variables*/
   font-size: 16px;
   font-family: "Open Sans";
+  /*text colors and bg colors will be declared here as global variabels for easier use*/
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
 }
 body {
+  color: white;
+  background-color: #343a40;
+  padding: 0;
   margin: 0;
 }
+main {
+  margin-left: 25rem; /*5em x 16px = 80px*/
+  padding: 2rem;
+}
+/*         customizing the scrollbar of the page       */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/*body::-webkit-scrollback-track {
+  background: #850909;
+}*/ /* this shit aint working anymore*/
+body::-webkit-scrollbar-thumb {
+  background: #555;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(54, 54, 54);
+}
+/*                        END                          */
+/*                  Navbar customization               */
+.navbar {
+  width: 25rem; /*the same as a margin-left property*/
+  height: 100vh; /*to be responsive*/
+  position: fixed;
+  background-color: var(--bg-primary);
+  background-image: url(https://i.pinimg.com/564x/62/8c/49/628c49605d5f20acb63c5d9ba4a78971.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-nav {
+  align-items: center;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav-item {
+  padding-top: 0.5rem;
+}
 
-#navbar {
+.nav-item img:first-of-type {
+  margin-top: 12rem;
+}
+.nav-item:last-of-type {
+  margin-bottom: auto;
+}
+
+a {
+  /*text-decoration: underline;*/
+  color: white;
+}
+a:hover {
+  color: rgb(180, 180, 180);
+}
+
+.nav-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 12rem;
+  transition: 0.8s;
+  margin-bottom: 0.8rem;
+  box-shadow: 0px 0px 10px 5px rgb(158, 219, 230, 0.2);
+}
+ul {
+  /*solves social media button left margin bug (coming from ul property)*/
+  padding: 0;
+  list-style-type: none;
+}
+.socials {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.socials .svg {
+  height: 30px;
+}
+.fa-brands {
+  margin: 0.5em;
+  color: #ececec;
+  transition: 0.1s;
+}
+.fa-brands:hover {
+  color: #9dffff;
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+.nav-item img:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 5px rgb(158, 219, 230, 0.5);
+}
+.navbar-nav span {
+  text-decoration: underline;
+}
+.navbar-nav span:hover {
+  transition: 0.1s;
+  color: #9dffff;
 }
