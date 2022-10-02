@@ -1,0 +1,11 @@
+:root {
+  /*:root can be useful for declaring global CSS variables*/
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+body {
+  margin: 0;
+}
+
+#navbar {
+}
