@@ -52,9 +52,17 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 .nav-item {
+  font-weight: 700;
   padding-top: 0.5rem;
 }
-
+.navbar h1 {
+  color: #d4d4d4;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  font-family: "Passions Conflict", cursive;
+  text-align: center;
+}
 .nav-item img:first-of-type {
   margin-top: 12rem;
 }
@@ -77,8 +85,7 @@ a:hover {
   border-radius: 50%;
   height: 12rem;
   transition: 0.8s;
-  margin-bottom: 0.8rem;
-  box-shadow: 0px 0px 10px 5px rgb(158, 219, 230, 0.2);
+  margin-bottom: 0rem;
 }
 ul {
   /*solves social media button left margin bug (coming from ul property)*/
@@ -106,8 +113,8 @@ a {
 }
 .nav-item img:hover {
   transition: 0.4s;
-  transform: scale(1.05);
-  box-shadow: 0px 0px 10px 5px rgb(158, 219, 230, 0.5);
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px 5px rgb(209, 189, 159, 0.3);
 }
 .navbar-nav span {
   text-decoration: underline;
