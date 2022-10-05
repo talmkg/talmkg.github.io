@@ -129,6 +129,7 @@ a {
     padding: 2rem;
   }
   .navbar {
+    min-height: 650px;
     position: relative;
     top: 0;
     width: 100vw;
