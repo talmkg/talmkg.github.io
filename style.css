@@ -34,8 +34,6 @@ body::-webkit-scrollbar-thumb {
 /*                        END                          */
 /*                  Navbar customization               */
 .navbar {
-  width: 25rem; /*the same as a margin-left property*/
-  height: 100vh; /*to be responsive*/
   position: fixed;
   background-color: var(--bg-primary);
   background-image: url(https://i.pinimg.com/564x/62/8c/49/628c49605d5f20acb63c5d9ba4a78971.jpg);
@@ -122,4 +120,24 @@ a {
 .navbar-nav span:hover {
   transition: 0.1s;
   color: #9dffff;
+}
+/*            MOBILE & PC VIEW - RESPONSIVE SIDE          */
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-left: 0rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+  }
+  .navbar {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 25rem; /*the same as a margin-left property*/
+    height: 100vh; /*to be responsive*/
+  }
 }
