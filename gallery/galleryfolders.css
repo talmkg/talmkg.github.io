@@ -1,0 +1,11 @@
+main {
+  padding: 10rem;
+}
+.folders {
+  align-items: center;
+}
+.fa-folder {
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+}
