@@ -1,8 +1,8 @@
 to-do-list:
 <ul>
-  <li>Gallery tab with folders & tags</li>
-  <li>Projects tab with folders too (any ideas?)</li>
-  <li>Responsive Design (Media Query)</li>
+  <li>✔️ Gallery tab with folders (No grid with images yet)</li>
+  <li>❌ Projects tab with folders too (There are folders, but I don't like how they look.)</li>
+  <li>✔️ Responsive Design (Media Query)</li>
  </ul>
 
 <p align="center">
