@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--                    links                       -->
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./projects.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <title>Tim A.</title>
     <script
       src="https://kit.fontawesome.com/8539ff3369.js"
@@ -26,59 +31,607 @@
     ></script>
   </head>
   <body>
-    <div class="navbar">
-      <div class="nav-item">
-        <img src="../assets/pfp.jpg" />
-      </div>
-      <h1 class="nav-name">Tim Afanasiev</h1>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="#">
-            <span class="nav-item">Blog (Coming soon!)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="../projects/projects.html">
-            <span class="nav-item">My Projects</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="../gallery/gallery.html">
-            <span class="nav-item">Gallery</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <span class="nav-item">About Me</span>
-          </a>
-        </li>
-      </ul>
-      <br />
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <div class="navbar1 d-flex align-items-center justify-content-center mb-3">
+      <div>
+        <div class="d-flex flex-column">
+          <div class="nav-item1">
+            <img src="../assets/pfp.jpg" />
+          </div>
+          <h1 class="nav-name">Tim Afanasiev</h1>
+          <ul class="navbar-nav1">
+            <li class="nav-item1">
+              <a href="../projects/projects.html">
+                <span class="nav-item1">My Projects</span>
+              </a>
+            </li>
+            <li class="nav-item1">
+              <a href="../gallery/gallery.html">
+                <span class="nav-item1">Gallery</span>
+              </a>
+            </li>
+            <li class="nav-item1">
+              <a href="#">
+                <span class="nav-item1">About Me</span>
+              </a>
+            </li>
+          </ul>
+          <br />
+          <div class="socials mt-3 d-flex justify-content-center">
+            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
     <!--content of the page-->
     <main>
-      <div class="folder">
-        <center>
-          <a href="#"
-            ><i class="fa-regular fa-folder fa-2xl"></i>&nbsp; &nbsp;Bootcamp
-            Projects<br />
-          </a>
-          <a href="#"
-            ><i class="fa-regular fa-folder fa-2xl"></i>&nbsp; &nbsp;My own
-            Projects<br
-          /></a>
-          <a href="#"
-            ><i class="fa-regular fa-folder fa-2xl"></i>&nbsp; &nbsp;Projects
-            For Fun<br />
-          </a>
-        </center>
+      <div class="mr-auto ml-auto">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://camo.githubusercontent.com/6caa82908f1c45335ea5eb70536189827e391a5a83529ccb192c0e47d08bf10e/68747470733a2f2f692e696d6775722e636f6d2f62375554546b742e706e67"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Spotify Website's clone build on Deezer's API (Songs, Albums,
+                  Artists, Search) and Bootstrap 5. I'm using personal links for
+                  Font Awesome and bootcamp's special links for Deezer's fetch,
+                  feel free to use but change the links first.
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal1"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Spotify clone
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1">
+                        <h2>Spotify Clone built on Bootstrap5&DeezersAPI 🫐</h2>
+
+                        <a href="https://skillicons.dev">
+                          <img
+                            src="https://skillicons.dev/icons?i=git,html,css,js,bootstrap"
+                          />
+                        </a>
+
+                        <hr />
+
+                        <h3>Our team back then:</h3>
+                        <ul>
+                          <li>Agatha O.</li>
+                          <li>Tim A.</li>
+                          <li>Kajal L.</li>
+                        </ul>
+
+                        <hr />
+                        Homepage: <img
+                        src="https://camo.githubusercontent.com/6caa82908f1c45335ea5eb70536189827e391a5a83529ccb192c0e47d08bf10e/68747470733a2f2f692e696d6775722e636f6d2f62375554546b742e706e67"
+                        " /> Album page:
+                        <img
+                          src="https://camo.githubusercontent.com/73a6f2266d97a7dad6b3c7a42d04e764d61b61cffd3c4a246af63f29789ce710/68747470733a2f2f692e696d6775722e636f6d2f7157317778356f2e706e67"
+                        />
+                        Artist page:
+                        <img
+                          src="https://camo.githubusercontent.com/9d17fea092475a31b1b95cc35738814d5b5f3de8791e898c542c669a33a6c3cb/68747470733a2f2f692e696d6775722e636f6d2f7069796b476a452e706e67"
+                        />
+                        Search page:
+                        <img
+                          src="https://camo.githubusercontent.com/e9bec803e3ac2c3147e2778d7a8ce5c0d79a58dda451b100aae1494f30c04a8d/68747470733a2f2f692e696d6775722e636f6d2f306c6e597257652e706e67"
+                        />
+                        Login page:
+                        <img
+                          src="https://camo.githubusercontent.com/feaa4419b0811c4ec803da6a28e4e17f4f4f9c6a852655143544dc8a218957ef/68747470733a2f2f692e696d6775722e636f6d2f6e6131355361302e706e67"
+                        />
+
+                        <hr />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                  explicabo porro beatae. Vel dolor autem enim nulla, cumque
+                  assumenda delectus odit nisi, nihil deserunt magni quod! Saepe
+                  commodi temporibus accusamus!
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Project
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1"></div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                  explicabo porro beatae. Vel dolor autem enim nulla, cumque
+                  assumenda delectus odit nisi, nihil deserunt magni quod! Saepe
+                  commodi temporibus accusamus!
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Project
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1"></div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                  explicabo porro beatae. Vel dolor autem enim nulla, cumque
+                  assumenda delectus odit nisi, nihil deserunt magni quod! Saepe
+                  commodi temporibus accusamus!
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Project
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1"></div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                  explicabo porro beatae. Vel dolor autem enim nulla, cumque
+                  assumenda delectus odit nisi, nihil deserunt magni quod! Saepe
+                  commodi temporibus accusamus!
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Project
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1"></div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg"
+                alt="Card image cap"
+                style="
+                  aspect-ratio: 4 / 3;
+                  object-fit: cover;
+                  border-radius: 10px !important;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text text-truncate">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                  explicabo porro beatae. Vel dolor autem enim nulla, cumque
+                  assumenda delectus odit nisi, nihil deserunt magni quod! Saepe
+                  commodi temporibus accusamus!
+                </p>
+              </div>
+
+              <div class="card-body d-flex justify-content-evenly">
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-solid fa-code"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Demo</a
+                >
+                <a href="#" class="card-link text-dark"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="color: black; margin: 0"
+                  ></i>
+                  Github</a
+                >
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="modal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Project
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body text-center m-1"></div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

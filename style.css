@@ -3,10 +3,6 @@
   font-size: 16px;
   font-family: "Open Sans";
   /*text colors and bg colors will be declared here as global variabels for easier use*/
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
 }
 body {
   color: white;
@@ -14,10 +10,7 @@ body {
   padding: 0;
   margin: 0;
 }
-main {
-  margin-left: 25rem; /*5em x 16px = 80px*/
-  padding: 2rem;
-}
+
 /*         customizing the scrollbar of the page       */
 body::-webkit-scrollbar {
   width: 0.5rem;
@@ -33,14 +26,14 @@ body::-webkit-scrollbar-thumb {
 }
 /*                        END                          */
 /*                  Navbar customization               */
-.navbar {
+.navbar1 {
   position: fixed;
   background-color: var(--bg-primary);
   background-image: url(https://i.pinimg.com/564x/62/8c/49/628c49605d5f20acb63c5d9ba4a78971.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.navbar-nav {
+.navbar-nav1 {
   align-items: center;
   position: relative;
   list-style: none;
@@ -49,11 +42,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
 }
-.nav-item {
+.nav-item1 {
   font-weight: 700;
   padding-top: 0.5rem;
 }
-.navbar h1 {
+.navbar1 h1 {
   color: #d4d4d4;
   font-size: 3rem;
   padding: 0;
@@ -61,71 +54,47 @@ body::-webkit-scrollbar-thumb {
   font-family: "Passions Conflict", cursive;
   text-align: center;
 }
-.nav-item img:first-of-type {
-  margin-top: 12rem;
-}
-.nav-item:last-of-type {
-  margin-bottom: auto;
-}
 
 a {
-  /*text-decoration: underline;*/
-  color: white;
+  color: white !important;
+  text-decoration: none !important;
 }
-a:hover {
+.navbar1 a:hover {
   color: rgb(180, 180, 180);
 }
 
-.nav-item img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.nav-item1 img {
   border-radius: 50%;
-  height: 12rem;
-  transition: 0.8s;
-  margin-bottom: 0rem;
-}
-ul {
-  /*solves social media button left margin bug (coming from ul property)*/
-  padding: 0;
-  list-style-type: none;
-}
-.socials {
-  text-align: center;
-}
-a {
-  text-decoration: none;
+  height: 15rem;
 }
 .fa-brands {
   margin: 0.5em;
   color: #ececec;
   transition: 0.1s;
 }
-.fa-brands:hover {
+.navbar1 .fa-brands:hover {
   color: #9dffff;
   transition: 0.1s;
   transform: scale(1.1);
 }
-.nav-item img:hover {
-  transition: 0.4s;
-  transform: scale(1.03);
-  box-shadow: 0px 0px 10px 5px rgb(209, 189, 159, 0.3);
-}
-.navbar-nav span {
-  text-decoration: underline;
-}
-.navbar-nav span:hover {
+
+.navbar-nav1 span:hover {
   transition: 0.1s;
   color: #9dffff;
 }
+.modal-body img {
+  max-width: 100%;
+}
+
 /*            MOBILE & PC VIEW - RESPONSIVE SIDE          */
 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   main {
     margin-left: 0rem; /*5em x 16px = 80px*/
     padding: 2rem;
   }
-  .navbar {
+  .navbar1 {
     min-height: 650px;
     position: relative;
     top: 0;
@@ -133,9 +102,51 @@ a {
     height: 100vh;
   }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .navbar {
-    width: 25rem; /*the same as a margin-left property*/
+  main {
+    margin-left: 18rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+  }
+  .navbar1 {
+    width: 18rem; /*the same as a margin-left property*/
+    height: 100vh; /*to be responsive*/
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  main {
+    margin-left: 18rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+  }
+  .navbar1 {
+    width: 18rem; /*the same as a margin-left property*/
+    height: 100vh; /*to be responsive*/
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main {
+    margin-left: 20rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+  }
+  .navbar1 {
+    width: 20rem; /*the same as a margin-left property*/
+    height: 100vh; /*to be responsive*/
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  main {
+    margin-left: 22rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+  }
+  .navbar1 {
+    width: 22rem; /*the same as a margin-left property*/
     height: 100vh; /*to be responsive*/
   }
 }
