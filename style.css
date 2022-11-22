@@ -85,6 +85,11 @@ a {
 .modal-body img {
   max-width: 100%;
 }
+/*SKIN COLOURED BUTTONS*/
+.btn-skin {
+  background-color: #a6a08f !important;
+  color: white !important;
+}
 
 /*            MOBILE & PC VIEW - RESPONSIVE SIDE          */
 
