@@ -4,6 +4,7 @@
   <li>✔️ Gallery tab </li>
   <li>✔️ Projects tab</li>
   <li>✔️ Responsive Design (Media Query + BS5)</li>
+  <li>📌 Home Page (Min. info + stack/links?)</li>
   <li>📌 About Me tab</li>
   <li>📌 Full screen modals for images in Gallery tab</li>
   <li>📌 Auto-changing/Random background of a sidebar</li>
