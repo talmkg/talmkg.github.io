@@ -5,8 +5,8 @@
   /*text colors and bg colors will be declared here as global variabels for easier use*/
 }
 body {
-  color: white;
   background-color: #343a40 !important;
+  color: white !important;
   padding: 0;
   margin: 0;
 }
