@@ -6,11 +6,13 @@
 }
 body {
   background-color: #343a40 !important;
-  color: white !important;
+
   padding: 0;
   margin: 0;
 }
-
+.mainIndex {
+  color: #ececec;
+}
 /*         customizing the scrollbar of the page       */
 body::-webkit-scrollbar {
   width: 0.5rem;
