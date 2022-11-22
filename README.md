@@ -1,10 +1,15 @@
-## [Demo](https://talmkg.github.io/solo-project-portfolio/) 🦝
+## [Demo](https://talmkg.github.io/portfolio-project/) 🦝
 ### to-do-list:
 <ul>
   <li>✔️ Gallery tab </li>
   <li>✔️ Projects tab</li>
   <li>✔️ Responsive Design (Media Query + BS5)</li>
   <li>📌 About Me tab</li>
+  <li>📌 Full screen modals for images in Gallery tab</li>
+  <li>📌 Auto-changing/Random background of a sidebar</li>
+  <li>📌 Make project creation dynamical (feel free to suggest solutions!)</li>
+  <li>📌 Fill the pages with links, projects, images and stuff.</li>
+  
  </ul>
 
 
