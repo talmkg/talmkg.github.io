@@ -13,7 +13,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #353535;
+  background-color: #353535 !important;
   font-size: 3rem;
   color: #fff;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
@@ -22,18 +22,14 @@ main {
   width: 100%;
   border-radius: 4px;
   overflow: hidden;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1/1;
-  object-fit: cover;
 }
 
 .photo-grid {
   display: grid;
   gap: 1rem;
-
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: 240px;
 }

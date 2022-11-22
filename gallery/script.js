@@ -26,12 +26,8 @@ const imageIndexes = [1, 2, 3, 4, 5, 6];
 const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
-  const image = document.createElement("img");
-  image.src = `../assets/galleryImages/${i}.jpg`;
-
-  image.classList.add("card");
-  image.addEventListener("click", () => {
-    //popup
-  });
-  gallery.appendChild(image);
+  const div = document.createElement("div");
+  div.style.backgroundImage = `url(../assets/galleryImages/${i}.jpg)`;
+  div.classList.add("card");
+  gallery.appendChild(div);
 });
