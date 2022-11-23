@@ -22,7 +22,7 @@
 const gallery = document.querySelector(".photo-grid");
 const popup = document.getElementById("popup");
 const selectedImage = document.getElementById("selectedImage");
-const imageIndexes = [1, 2, 3, 4, 5, 6];
+const imageIndexes = [1, 2];
 const selectedIndex = null;
 
 imageIndexes.forEach((i) => {

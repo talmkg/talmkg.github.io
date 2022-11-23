@@ -12,6 +12,7 @@ body {
 }
 .mainIndex {
   color: #ececec;
+  font-size: 19px;
 }
 /*         customizing the scrollbar of the page       */
 body::-webkit-scrollbar {
@@ -31,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 .navbar1 {
   position: fixed;
   background-color: var(--bg-primary);
-  background-image: url(https://i.pinimg.com/564x/62/8c/49/628c49605d5f20acb63c5d9ba4a78971.jpg);
+  background-image: url(https://i.pinimg.com/564x/88/c2/45/88c2456193cfca4ba3d8ebff24311789.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -50,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 }
 .navbar1 h1 {
   color: #d4d4d4;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 0;
   margin: 0;
   font-family: "Passions Conflict", cursive;
