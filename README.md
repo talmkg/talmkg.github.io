@@ -17,7 +17,7 @@
 <h3 alig="center">IT'S STILL UNDER DEVELOPMENT 🤺</h3>
 <p align="center">
 <img src="https://i.imgur.com/BLz5ZAT.png">
-<img src="https://i.imgur.com/vqKuw8a.png">
+<img src="https://i.imgur.com/yYLNvOd.png">
 </p>
 
 
